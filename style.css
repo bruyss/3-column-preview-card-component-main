@@ -40,7 +40,7 @@ h3 {
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin-block: 1em;
   text-transform: uppercase;
 }
@@ -69,7 +69,7 @@ button {
   font-size: 1rem;
   border-radius: 2em;
   margin-block: 0.5em;
-  padding: 0.8em 2em;
+  padding: 0.8em 1.5em;
 }
 
 button:hover {
@@ -117,19 +117,31 @@ button:active {
 }
 
 .container {
-  padding: 2rem;
-  max-width: 34ch;
+  padding: 3em;
   display: flex;
   flex-direction: column;
 }
 
+@media (min-width: 700px) {
+    .container {
+        padding: 2em 3em;
+    }
+  }
+
 .container > p {
-  margin-bottom: auto;
+    margin-bottom: auto;
+    max-width: 22ch;
 }
 
+@media (min-width: 700px) {
+    .container > p {
+        margin-bottom: 3em;
+    }
+  }
+
 .container > button {
-  margin-top: auto;
-  max-width: max-content;
+    margin-top: auto;
+    max-width: max-content;
 }
 
 .bg-bright {
