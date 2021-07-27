@@ -1,0 +1,145 @@
+:root {
+  --clr-primary-31: hsl(31, 77%, 52%);
+  --clr-primary-184: hsl(184, 100%, 22%);
+  --clr-primary-179: hsl(179, 100%, 13%);
+
+  --clr-neutral-1: hsla(0, 0%, 100%, 0.75);
+  --clr-neutral-2: hsl(0, 0%, 95%);
+
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-accent: "Big Shoulders Display", cursive;
+
+  --fw-primary: 400;
+  --fw-accent: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  background-color: var(--clr-neutral-2);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-neutral-2);
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-accent);
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-block: 1em;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--clr-neutral-1);
+  font-size: 0.9375rem;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-primary);
+  line-height: 1.6;
+  padding-bottom: 1.5em;
+}
+
+img {
+  display: block;
+  max-width: max-content;
+}
+
+button {
+  background-color: var(--clr-neutral-2);
+  color: black;
+  mix-blend-mode: screen;
+  transition: linear 150ms;
+  font-family: var(--ff-primary);
+  font-weight: var(--ff-primary);
+  font-size: 1rem;
+  border-radius: 2em;
+  margin-block: 0.5em;
+  padding: 0.8em 2em;
+}
+
+button:hover {
+  color: var(--clr-neutral-2);
+  background-color: transparent;
+}
+
+button:focus,
+button:active {
+  color: var(--clr-neutral-2);
+  background-color: transparent;
+}
+
+.card-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.card {
+  margin: 4em 1em;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+@media (min-width: 700px) {
+  .card {
+    margin: 8em 4em;
+  }
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+.split > * {
+  flex: 100%;
+}
+
+@media (min-width: 700px) {
+  .split {
+    flex-direction: row;
+  }
+}
+
+.container {
+  padding: 2rem;
+  max-width: 34ch;
+  display: flex;
+  flex-direction: column;
+}
+
+.container > p {
+  margin-bottom: auto;
+}
+
+.container > button {
+  margin-top: auto;
+  max-width: max-content;
+}
+
+.bg-bright {
+  background-color: var(--clr-primary-31);
+}
+
+.bg-muted {
+  background-color: var(--clr-primary-179);
+}
+
+.bg-dark {
+  background-color: var(--clr-primary-184);
+}
